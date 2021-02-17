@@ -6,7 +6,7 @@ export const Home = () => {
 
     return (
         <div className="home">
-            <Link to="/new" className="btn-link">Add gradient</Link>
+            <Link to="/new" className="btn btn-link">Add gradient</Link>
             <GradientsList/>
         </div>
     );
