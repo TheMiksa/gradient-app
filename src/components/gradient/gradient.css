@@ -1,6 +1,6 @@
 .gradient {
     position: relative;
-    margin: 10px;
+    margin: 10px 0;
     width: auto;
     height: 100px;
 }
@@ -11,6 +11,7 @@
 .colors {
     position: relative;
     top: 20px;
+    padding: 0 5px;
 }
 .colors span {
     color: white;
@@ -31,7 +32,11 @@
     font-size: 18px;
     left: -5px;
 }
+.btn-edit:hover {
+    text-decoration: none;
+}
 .btn-delete {
+    cursor: pointer;
     font-size: 10px;
     right: -5px;
 

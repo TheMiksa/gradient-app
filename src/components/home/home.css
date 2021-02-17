@@ -1,0 +1,13 @@
+
+.btn-link {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: #0C4AFF;
+    background: linear-gradient(70deg, mediumspringgreen, lightblue);
+}
+.btn-link:hover {
+    color: #0C9FFF;
+    background: linear-gradient(75deg, #B1F822, #22F8DE);
+    text-decoration: none;
+}

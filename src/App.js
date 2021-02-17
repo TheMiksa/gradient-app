@@ -1,4 +1,5 @@
 import React from "react";
+import 'bootswatch/dist/solar/bootstrap.min.css';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 import Edit from "./components/edit";
@@ -14,7 +15,6 @@ function App() {
   return (
     <div className="App">
         <Router>
-                <Link to="/new" className="btn-link">Add gradient</Link>
             <Switch>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/new" component={New} />

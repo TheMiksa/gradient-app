@@ -1,0 +1,5 @@
+.new-gradient {
+    width: auto;
+    height: 100px;
+    background: linear-gradient(to right, greenyellow, gold);
+}
