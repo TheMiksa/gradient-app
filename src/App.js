@@ -6,21 +6,22 @@ import Home from "./components/home";
 import New from "./components/new";
 import NoMatch from "./components/no-match";
 import './App.css';
+import '../src/data/gradients-list';
+
+const GradientsList = React.createContext([]);
 
 function App() {
   return (
     <div className="App">
-      <Router>
-          <Link to="/">Home</Link>
-          <Link to="/new">New</Link>
-          <Link to="/edit/5">Edit</Link>
-        <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route exact path="/new" component={New} />
-          <Route exact path="/edit/:id" component={Edit} />
-          <Route exact component={NoMatch}/>
-        </Switch>
-      </Router>
+        <Router>
+            <Link to="/new">New</Link>
+            <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route exact path="/new" component={New} />
+                <Route exact path="/edit/:id" component={Edit} />
+                <Route exact component={NoMatch}/>
+            </Switch>
+        </Router>
     </div>
   );
 }
