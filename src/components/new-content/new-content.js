@@ -54,8 +54,8 @@ export const NewContent = ({id = "", firstClr = "", secondClr = "", buttonName =
     );
 
     return (
-        <div className="new">
-            <div className="new-menu">
+        <div className="new-content">
+            <div className="new-content-menu">
                 <div className="input-box">
                     <input type="text" value={"#" + firstColor} onChange={({target}) => setFirstColor(target.value.slice(1))}/>
                     <input type="text" value={"#" + secondColor} onChange={({target}) => setSecondColor(target.value.slice(1))}/>
@@ -65,7 +65,7 @@ export const NewContent = ({id = "", firstClr = "", secondClr = "", buttonName =
                     <Link to="/" className="btn btn-primary">Back to Home</Link>
                 </div>
             </div>
-            <div className="new-gradient" style={{background: `linear-gradient(to right, #${firstColor}, #${secondColor}`}}></div>
+            <div className="new-content-gradient" style={{background: `linear-gradient(to right, #${firstColor}, #${secondColor}`}}></div>
         </div>
     );
 };
