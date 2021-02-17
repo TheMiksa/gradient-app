@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
         <Router>
-            <Link to="/new">New</Link>
+                <Link to="/new" className="btn-link">Add gradient</Link>
             <Switch>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/new" component={New} />

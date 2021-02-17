@@ -5,3 +5,13 @@
     margin: auto;
     padding: 15px;
 }
+.btn-link {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: blueviolet;
+    background: linear-gradient(70deg, mediumspringgreen, lightblue);
+}
+.btn-link:hover {
+    color: greenyellow;
+}
