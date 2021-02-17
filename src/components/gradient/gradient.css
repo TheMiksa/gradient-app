@@ -13,9 +13,7 @@
     top: 20px;
     padding: 0 5px;
 }
-.colors span {
-    color: white;
-}
+
 .btn-edit, .btn-delete {
     position: relative;
     top: -5px;

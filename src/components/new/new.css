@@ -1,14 +1,40 @@
+.input-box,
+.btn-box {
+    margin-bottom: 20px;
+}
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+input:first-child {
+    margin-right: 15px;
+}
+input {
+    width: 100px;
+    outline: none;
+    border: 0;
+    font-size: 25px;
+    height: 35px;
+    border-radius: 5px;
+}
+
 .new-gradient {
     width: auto;
     height: 100px;
     background: linear-gradient(to right, greenyellow, gold);
 }
-.btn-gradient {
+
+.btn-gradient,
+.btn-disabled,
+.btn-primary {
     text-decoration: none;
     padding: 5px;
     border: 0;
     border-radius: 5px;
     color: #0C4AFF;
+}
+.btn-gradient {
     background: linear-gradient(70deg, greenyellow, gold);
 }
 .btn-gradient:hover {
@@ -17,10 +43,5 @@
     text-decoration: none;
 }
 .btn-disabled {
-    border: 0;
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 5px;
-    color: #0C4AFF;
     background: linear-gradient(70deg, rgba(0.3, 173, 255, 47), rgba(0.3, 255, 215, 0));
 }
