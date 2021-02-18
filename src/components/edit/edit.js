@@ -1,7 +1,6 @@
-import React, {useState, useEffect} from "react";
-import {Link} from "react-router-dom";
-import {v4} from "uuid";
-import NewContent from "../new-content";
+import React from "react";
+
+import GradientSettings from "../gradient-settings";
 import "./edit.css";
 
 export const Edit = ({match}) => {
@@ -11,6 +10,6 @@ export const Edit = ({match}) => {
     const firstColor = gradient.firstColor.slice(1);
     const secondColor = gradient.secondColor.slice(1);
     return (
-        <NewContent id={id} firstClr={firstColor} secondClr={secondColor} buttonName="Change gradient"/>
+        <GradientSettings id={id} firstClr={firstColor} secondClr={secondColor} buttonName="Change gradient"/>
     )
 };

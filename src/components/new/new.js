@@ -1,11 +1,10 @@
-import React, {useState, useEffect} from "react";
-import {Link} from "react-router-dom"
-import {v4} from "uuid";
-import NewContent from "../new-content";
+import React from "react";
+
+import GradientSettings from "../gradient-settings";
 import "./new.css";
 
 export const New = () => {
     return (
-        <NewContent/>
+        <GradientSettings/>
     )
 };

@@ -19,7 +19,7 @@ input {
     border-radius: 5px;
 }
 
-.new-content-gradient {
+.gradient-settings-gradient {
     width: auto;
     height: 100px;
     background: linear-gradient(to right, greenyellow, gold);
