@@ -1,0 +1,10 @@
+.no-match {
+    height: 100px;
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
+    background: linear-gradient(120deg, #00FFA6, #FFE800);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

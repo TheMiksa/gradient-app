@@ -16,9 +16,10 @@ export const Gradient = ({id, firstColor, secondColor, onDeleteGradient}) => {
                      className="btn-edit">
                    &#9998;
                </Link>
-               <div
-                     onClick={() => onDeleteGradient(id)}
-                     className="btn-delete">&#10006;</div>
+               <div onClick={() => onDeleteGradient(id)}
+                    className="btn-delete">
+                   &#10006;
+               </div>
            </div>
             <div className="colors">
                 <span style={{color: isWhiteColor(firstColor)}}>{firstColor}</span>

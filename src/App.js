@@ -9,8 +9,6 @@ import NoMatch from "./components/no-match";
 import './App.css';
 import '../src/data/gradients-list';
 
-const GradientsList = React.createContext([]);
-
 function App() {
   return (
     <div className="App">
