@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import {v4} from "uuid";
 import "./gradient-settings.css";
 
-export const GradientSettings = ({id = "", firstClr = "", secondClr = "", buttonName = "Create gradient"}) => {
+export const GradientSettings = ({id = "", firstClr = "", secondClr = "", }) => {
     const [firstColor, setFirstColor] = useState(firstClr);
     const [secondColor, setSecondColor] = useState(secondClr);
     const [valid, toggleValid] = useState(false);
@@ -57,7 +57,9 @@ export const GradientSettings = ({id = "", firstClr = "", secondClr = "", button
                     <input type="text" value={"#" + secondColor} onChange={({target}) => setSecondColor(target.value.slice(1))}/>
                 </div>
                 <div  className="btn-box">
-                    <Link to="/" className={`btn ${btnClass}`} onClick={() => toAddGradient(firstColor, secondColor)}>{buttonName}</Link>
+                    <Link to="/" className={`btn ${btnClass}`} onClick={() => toAddGradient(firstColor, secondColor)}>
+                        {id ? "Change gradient" : "Create gradient"}
+                    </Link>
                     <Link to="/" className="btn btn-home">Back to Home</Link>
                 </div>
             </div>

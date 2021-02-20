@@ -10,6 +10,6 @@ export const Edit = ({match}) => {
     const firstColor = gradient.firstColor.slice(1);
     const secondColor = gradient.secondColor.slice(1);
     return (
-        <GradientSettings id={id} firstClr={firstColor} secondClr={secondColor} buttonName="Change gradient"/>
+        <GradientSettings id={id} firstClr={firstColor} secondClr={secondColor}/>
     )
 };
