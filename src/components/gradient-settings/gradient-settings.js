@@ -53,8 +53,16 @@ export const GradientSettings = ({id = "", firstClr = "", secondClr = "", }) => 
         <div className="gradient-settings">
             <div className="gradient-settings-menu">
                 <div className="input-box">
-                    <input type="text" value={"#" + firstColor} onChange={({target}) => setFirstColor(target.value.slice(1))}/>
-                    <input type="text" value={"#" + secondColor} onChange={({target}) => setSecondColor(target.value.slice(1))}/>
+                    <div className="input-with-label">
+                        <label htmlFor="first-input" className="first-latter">#</label>
+                        <input id="first-input" type="text" value={firstColor} maxLength={6}
+                               onChange={({target}) => setFirstColor(target.value)}/>
+                    </div>
+                    <div className="input-with-label">
+                        <label htmlFor="second-input" className="first-latter">#</label>
+                        <input id="second-input" type="text" value={secondColor} maxLength={6}
+                               onChange={({target}) => setSecondColor(target.value)}/>
+                    </div>
                 </div>
                 <div  className="btn-box">
                     <Link to="/" className={`btn ${btnClass}`} onClick={() => toAddGradient(firstColor, secondColor)}>

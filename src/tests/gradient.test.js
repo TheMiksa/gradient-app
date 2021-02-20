@@ -32,7 +32,7 @@ it ('Should to return the right text colors.', () => {
         render(<Router><Gradient id="id1" firstColor="#fff" secondColor="#aaf" /></Router>, container);
     });
     expect(document.querySelector(".colors").childNodes[0].style.color).toBe("black");
-    expect(document.querySelector(".colors").childNodes[1].style.color).toBe("white");
+    expect(document.querySelector(".colors").childNodes[1].style.color).toBe("black");
 
     act(() => {
         render(<Router><Gradient id="id1" firstColor="#000" secondColor="#f0f" /></Router>, container);
@@ -47,7 +47,7 @@ it ('Should to return the right text colors.', () => {
     expect(document.querySelector(".colors").childNodes[1].style.color).toBe("black");
 });
 
-describe("text", () => {
+describe("Gradient must be removed from gradients list", () => {
     let container = null
     beforeEach(() => {
         container = document.createElement("div");
@@ -73,7 +73,7 @@ describe("text", () => {
         container = null;
     })
 
-    it('Should to', () => {
+    it('Should be removed from gradient list', () => {
         document.querySelector(".btn-delete").click();
         expect(JSON.parse(localStorage.getItem("gradientsListClone")).includes(el => el.id === 5)).toBe(false);
 

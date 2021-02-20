@@ -2,16 +2,29 @@
 .btn-box {
     margin-bottom: 20px;
 }
+.input-box {
+    width: 50%;
+    max-width: 240px;
+    display: flex;
+    justify-content: space-between;
+}
 .btn-box {
     display: flex;
     justify-content: space-between;
 }
 
-input:first-child {
-    margin-right: 15px;
+.input-with-label {
+    position: relative;
+}
+.first-latter {
+    position: absolute;
+    margin: 0;
+    font-size: 25px;
+    color: black;
 }
 input {
     width: 100px;
+    padding-left: 12px;
     outline: none;
     border: 0;
     font-size: 25px;
@@ -48,7 +61,6 @@ input {
     pointer-events:none;
 
 }
-
 .btn-home {
     background: linear-gradient(70deg, #00FFA6, #B1F822);
 }

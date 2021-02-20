@@ -11,10 +11,10 @@ beforeEach(() => {
     container = document.createElement("div");
     document.body.appendChild(container);
     gradientsList = [
-        {id: 50, firstColor: "#f1a1f3", secondColor: "#0ff0a1"},
-        {id: 51, firstColor: "#f1f1f3", secondColor: "#fff0a1"},
-        {id: 52, firstColor: "#11f1f3", secondColor: "#0ffba1"},
-        {id: 53, firstColor: "#f1f1f3", secondColor: "#0cf0a1"},
+        {id: "50", firstColor: "#f1a1f3", secondColor: "#0ff0a1"},
+        {id: "51", firstColor: "#f1f1f3", secondColor: "#fff0a1"},
+        {id: "52", firstColor: "#11f1f3", secondColor: "#0ffba1"},
+        {id: "53", firstColor: "#f1f1f3", secondColor: "#0cf0a1"},
    ];
     localStorage.setItem("gradientsList", JSON.stringify(gradientsList));
 });
