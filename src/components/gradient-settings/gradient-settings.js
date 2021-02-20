@@ -62,7 +62,7 @@ export const GradientSettings = ({id = "", firstClr = "", secondClr = "", button
                 </div>
                 <div  className="btn-box">
                     {btn}
-                    <Link to="/" className="btn btn-primary">Back to Home</Link>
+                    <Link to="/" className="btn btn-home">Back to Home</Link>
                 </div>
             </div>
             <div className="gradient-settings-gradient" style={{background: `linear-gradient(to right, #${firstColor}, #${secondColor}`}}></div>

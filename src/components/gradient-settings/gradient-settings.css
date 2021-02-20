@@ -22,12 +22,13 @@ input {
 .gradient-settings-gradient {
     width: auto;
     height: 100px;
+    border-radius: 5px;
     background: linear-gradient(to right, greenyellow, gold);
 }
 
 .btn-gradient,
 .btn-disabled,
-.btn-primary {
+.btn-home {
     text-decoration: none;
     padding: 5px;
     border: 0;
@@ -44,4 +45,12 @@ input {
 }
 .btn-disabled {
     background: linear-gradient(70deg, rgba(0.3, 173, 255, 47), rgba(0.3, 255, 215, 0));
+}
+
+.btn-home {
+    background: linear-gradient(70deg, #00FFA6, #B1F822);
+}
+.btn-home:hover {
+    background: linear-gradient(70deg, #00EF96, #A1E812);
+    color: #0C9FFF;
 }
