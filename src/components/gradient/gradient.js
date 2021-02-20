@@ -4,9 +4,9 @@ import "./gradient.css";
 export const Gradient = ({id, firstColor, secondColor, onDeleteGradient}) => {
     const isWhiteColor = (color) => {
         if (color.length === 4) {
-            return color.match(/#[fF][fF][fF]/) ? "black" : "white";
+            return color.match(/#[fFeEdD]{3}/) ? "black" : "white";
         } else if (color.length === 7) {
-            return color.match(/#[fF]\w[fF]\w[fF]\w/) ? "black" : "white";
+            return color.match(/#[fFeEdD]\w{3}/) ? "black" : "white";
         }
     };
     return (
