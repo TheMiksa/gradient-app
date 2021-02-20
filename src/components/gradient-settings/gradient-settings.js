@@ -47,11 +47,7 @@ export const GradientSettings = ({id = "", firstClr = "", secondClr = "", button
         localStorage.setItem("gradientsList", JSON.stringify(gradientsList));
     };
 
-    const btn = valid ? (
-        <Link to="/" className="btn btn-gradient" onClick={() => toAddGradient(firstColor, secondColor)}>{buttonName}</Link>
-    ) : (
-        <button className="btn btn-disabled" disabled={true}>Create gradient</button>
-    );
+    const btnClass = valid ? "btn-gradient" : "btn-disabled";
 
     return (
         <div className="gradient-settings">
@@ -61,7 +57,7 @@ export const GradientSettings = ({id = "", firstClr = "", secondClr = "", button
                     <input type="text" value={"#" + secondColor} onChange={({target}) => setSecondColor(target.value.slice(1))}/>
                 </div>
                 <div  className="btn-box">
-                    {btn}
+                    <Link to="/" className={`btn ${btnClass}`} onClick={() => toAddGradient(firstColor, secondColor)}>{buttonName}</Link>
                     <Link to="/" className="btn btn-home">Back to Home</Link>
                 </div>
             </div>
