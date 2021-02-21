@@ -30,8 +30,8 @@ it("Should have right colors", () => {
    act(() => {
        render(<Router><GradientSettings id="newId" firstClr="abcdef" secondClr="012345"/></Router>, container);
    });
-   expect(document.querySelector(".input-box").childNodes[0].value).toBe("#abcdef");
-   expect(document.querySelector(".input-box").childNodes[1].value).toBe("#012345");
+   expect(document.querySelector(".input-box").childNodes[0].childNodes[1].value).toBe("abcdef");
+   expect(document.querySelector(".input-box").childNodes[1].childNodes[1].value).toBe("012345");
 });
 
 it("btn-gradient must to be active and btn-disabled not be active", () => {

@@ -1,9 +1,12 @@
+.gradient-settings {
+    width: 100%;
+}
 .input-box,
 .btn-box {
     margin-bottom: 20px;
 }
 .input-box {
-    width: 50%;
+    width: 100%;
     max-width: 240px;
     display: flex;
     justify-content: space-between;

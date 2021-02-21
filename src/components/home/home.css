@@ -1,4 +1,6 @@
-
+.home {
+    width: 100%;
+}
 .btn-link {
     text-decoration: none;
     padding: 5px;
