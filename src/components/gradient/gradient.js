@@ -6,7 +6,7 @@ export const Gradient = ({id, firstColor, secondColor, onDeleteGradient}) => {
         if (color.length === 4) {
             return color.match(/[a-fA-F]{2}/) ? "black" : "white";
         } else if (color.length === 7) {
-            return color.match(/[a-fA-F]\w[a-fA-F]\w[a-fA-F]\w/) ? "black" : "white";
+            return color.match(/([a-fA-F]\w){2}/) ? "black" : "white";
         }
     };
     return (
